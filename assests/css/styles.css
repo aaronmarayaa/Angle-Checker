@@ -1,0 +1,76 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:300);
+
+body{
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(10, 10, 10, 0.548),hsla(0, 19%, 5%, 0.6)), url(../image/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  font-family: "poppins", sans-serif;
+  color: aliceblue;
+  height: 25rem;
+  width: 30rem;
+  box-sizing: border-box;
+  backdrop-filter: blur(5px);
+  border: 2px solid aliceblue;
+  border-radius: 5px;
+  padding: 1rem 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.container h1{
+  font-size: 1.8rem;
+}
+
+.angleContainer{
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 45%;
+  width: 100%;
+  background-color: transparent;
+  padding: 1rem 2rem;
+}
+
+.acute-angle {
+  height: 90px;
+  width: 100px;
+  border-bottom: 1px solid red;
+  border-left: 2px solid red;
+  transform: skew(-45deg);
+}
+
+.right-angle {
+  height: 90px;
+  width: 100px;
+  border-bottom: 1px solid red;
+  border-left: 2px solid red;
+  transform: skew(-0deg);
+}
+
+.obtuse-angle {
+  height: 70px;
+  width: 100px;
+  border-bottom: 1px solid red;
+  border-left: 2px solid red;
+  transform: skew(40deg);
+}
+
+.straight-line {
+  height: 50px;
+  width: 180px;
+  border-bottom: 1px solid red;
+}
