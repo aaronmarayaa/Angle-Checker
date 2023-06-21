@@ -1,10 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:300);
 
+*{
+  box-sizing: border-box;
+}
+
 body{
-  display: flex;
-  justify-content: center;
-  min-height: 100vh;
-  background-image: linear-gradient(rgba(10, 10, 10, 0.548),hsla(0, 19%, 5%, 0.6)), url(../image/bg.jpg);
+  min-height: 97.5vh;
+  background-image: linear-gradient(rgba(10, 10, 10, 0.548),hsla(0, 19%, 5%, 0.6)), url(../image/bg.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -17,9 +19,8 @@ body{
   color: aliceblue;
   height: 25rem;
   width: 30rem;
-  box-sizing: border-box;
   backdrop-filter: blur(5px);
-  border: 2px solid aliceblue;
+  border: 2px solid rgb(127, 126, 126);
   border-radius: 5px;
   padding: 1rem 5rem;
   display: flex;
@@ -31,46 +32,82 @@ body{
 
 .container h1{
   font-size: 1.8rem;
+  color:#ffd0a3;
+}
+
+.container input{
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  color: aliceblue;
+  text-align: center;
+}
+.container input[type="number"]:focus{
+  outline: none;
+  border: none;
+}
+
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.container button{
+  border: 1px solid #ffd0a3;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #bdd1cf;
+  padding: 10px 20px;
+}
+.container button:hover{
+  transition: 400ms;
+  background-color: #ffd0a3;
+  color: rgb(0, 0, 0);
 }
 
 .angleContainer{
+  height: 45%;
+  width: 100%;
+  background-color: transparent;
+  padding: 1rem 2rem;
   box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  height: 45%;
-  width: 100%;
-  background-color: transparent;
-  padding: 1rem 2rem;
 }
+
 
 .acute-angle {
   height: 90px;
   width: 100px;
-  border-bottom: 1px solid red;
-  border-left: 2px solid red;
+  border-bottom: 1px solid #ffd0a3;
+  border-left: 2px solid #ffd0a3;
   transform: skew(-45deg);
+  transition: 400ms;
 }
 
 .right-angle {
   height: 90px;
   width: 100px;
-  border-bottom: 1px solid red;
-  border-left: 2px solid red;
+  border-bottom: 1px solid #ffd0a3;
+  border-left: 2px solid #ffd0a3;
   transform: skew(-0deg);
+  transition: 400ms;
 }
 
 .obtuse-angle {
   height: 70px;
   width: 100px;
-  border-bottom: 1px solid red;
-  border-left: 2px solid red;
+  border-bottom: 1px solid #ffd0a3;
+  border-left: 2px solid #ffd0a3;
   transform: skew(40deg);
+  transition: 400ms;
 }
 
 .straight-line {
   height: 50px;
   width: 180px;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid #ffd0a3;
+  transition: 400ms;
 }
