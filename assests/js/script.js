@@ -1,23 +1,31 @@
 function myFunction() {
-    var grade = Number(document.getElementById("inputAngle").value);
-    var textMarginAngles = document.getElementById('angleNames');
+    var angleSize = Number(document.getElementById("angleSize").value);
+    var angleName = document.getElementById('angleName');
     var angle = document.getElementById('angle');
   
-    if (grade >= 1 && grade <= 89) {
-      textMarginAngles.innerHTML = "Acute angle";
+    if (angleSize >= 1 && angleSize <= 89) {
+      angleName.innerHTML = "Acute angle";
       angle.className = 'acute-angle';
-    } else if (grade === 90) {
-      textMarginAngles.innerHTML = "Right angle";
+    } 
+    else if (angleSize === 90) {
+      angleName.innerHTML = "Right angle";
       angle.className = 'right-angle';
-    } else if (grade >= 91 && grade <= 179) {
-      textMarginAngles.innerHTML = "Obtuse angle";
+    } 
+    else if (angleSize >= 91 && angleSize <= 179) {
+      angleName.innerHTML = "Obtuse angle";
       angle.className = 'obtuse-angle';
-    } else if (grade === 180) {
-      textMarginAngles.innerHTML = "Straight line";
+    } 
+    else if (angleSize === 180) {
+      angleName.innerHTML = "Straight line";
       angle.className = 'straight-line';
-    } else {
+    } 
+    else if (angleSize === 360){
+      angleName.innerHTML = "Circle";
+      angle.className = 'circle';
+    } 
+    else {
       angle.className = 'angle';
-      textMarginAngles.innerHTML = "";
+      angleName.innerHTML = "";
       angle.innerHTML = "";
     }
   }
