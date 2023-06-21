@@ -1,6 +1,6 @@
 function myFunction() {
     var grade = Number(document.getElementById("inputAngle").value);
-    var textMarginAngles = document.getElementById('textMargin_angles');
+    var textMarginAngles = document.getElementById('angleNames');
     var angle = document.getElementById('angle');
   
     if (grade >= 1 && grade <= 89) {
