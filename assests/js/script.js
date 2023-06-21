@@ -23,6 +23,10 @@ function myFunction() {
       angleName.innerHTML = "Circle";
       angle.className = 'circle';
     } 
+    else if(angleSize > 180 && angleSize < 360){
+      angleName.innerHTML = "Reflex-angle";
+      angle.className = 'reflex-angle';
+    }
     else {
       angle.className = 'angle';
       angleName.innerHTML = "";

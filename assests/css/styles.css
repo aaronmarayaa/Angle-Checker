@@ -120,3 +120,13 @@ input::-webkit-inner-spin-button {
   margin-right: 3.5rem;
   transition: 400ms;
 }
+
+.reflex-angle {
+  width: 27px;
+  height: 570px;
+  border-left: 1px solid #ffd0a3;
+  border-top: 1px solid #ffd0a3;
+  margin-right: 3.5rem;
+  transform: skewX(70deg) rotate(80deg);
+  transition: 400ms;
+}
