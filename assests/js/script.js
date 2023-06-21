@@ -1,5 +1,5 @@
 function myFunction() {
-    var grade = Number(document.getElementById("result1").value);
+    var grade = Number(document.getElementById("inputAngle").value);
     var textMarginAngles = document.getElementById('textMargin_angles');
     var angle = document.getElementById('angle');
   
