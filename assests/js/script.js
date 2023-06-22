@@ -1,4 +1,4 @@
-function myFunction() {
+function showAngle() {
     var angleSize = Number(document.getElementById("angleSize").value);
     var angleName = document.getElementById('angleName');
     var angle = document.getElementById('angle');
